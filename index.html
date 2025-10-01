@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company - Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="m-0 p-0 font-figtree">
+    <!-- navbar -->
+    <nav class="bg-white shadow-md py-[27px]">
+        <div class="mx-5 lg:mx-[100px] mg:mx-auto">
+            <div class="flex justify-between">
+                <!-- logo desktop -->
+                <div class="hidden lg:flex items-center justify-center cursor-pointer">
+                    <img src="assets/logo-lg.png" alt="Company logo">
+                </div>
+
+                <!-- logo small screen -->
+                <div class="flex items-center justify-center lg:hidden">
+                    <img class="scale-75" src="assets/logo-sm.png" alt="Company logo">
+                </div>
+
+                <!-- desktop menu -->
+                <div class="hidden lg:flex items-center justify-center space-x-[34px] font-semibold lg:text-lg">
+                    <a href="#" class="text-[#282828] hover:underline hover:underline-offset-2">Home</a>
+                    <a href="#" class="text-[#282828] hover:underline hover:underline-offset-2">About Us</a>
+                    <a href="#" class="text-[#282828] hover:underline hover:underline-offset-2">Our Services</a>
+                    <a href="#" class="text-[#282828] hover:underline hover:underline-offset-2">Pricing</a>
+                    <a href="#" class="text-[#282828] hover:underline hover:underline-offset-2">FAQ</a>
+                </div>
+
+                <!-- hamburger menu -->
+                <div class="flex items-center lg:hidden">
+                    <button id="menuBtn" class="focus:outline-none">
+                        <!-- menu icon -->
+                        <svg id="menuIcon" class="size-8 text-[#FA1239]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <!-- close icon -->
+                        <svg id="closeIcon" class="size-8 text-[#FA1239] hidden" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- get quote button, hidden in smaller screens -->
+                <button
+                    class="hidden lg:block px-[22px] py-3 stroke-black stroke-[1px] text-white bg-[#FA1239] rounded-[30px] cursor-pointer hover:scale-105 active:scale-95 transition-all hover:underline hover:underline-offset-2 hover:bg-white hover:text-[#FA1239] shadow-[0px_0px_10px_2px_#FA1239]">Get
+                    A Quote</button>
+            </div>
+        </div>
+
+        <!-- small screen menu -->
+        <div id="mobileMenu" class="lg:hidden hidden px-4 pt-2 text-center space-y-2 bg-white text-xl">
+            <a href="#" class="block text-[#282828] hover:underline hover:underline-offset-2">Home</a>
+            <a href="#" class="block text-[#282828] hover:underline hover:underline-offset-2">About</a>
+            <a href="#" class="block text-[#282828] hover:underline hover:underline-offset-2">Services</a>
+            <a href="#" class="block text-[#282828] hover:underline hover:underline-offset-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- hero -->
+    <section id="hero-section">
+        <!-- desktop -->
+        <div
+            class="hidden w-full h-fit lg:flex items-center justify-center relative bg-[url(/assets/hero-bg.png)] bg-cover bg-center min-h-screen">
+            <div class=" flex justify-center mt-[128px] py-10 ml-0 mr-0 lg:ml-[100px] lg:mr-12">
+                <div class=" flex flex-col text-left justify-start max-w-[620px] h-fit space-y-[38px] mt-10 ">
+                    <!-- heading -->
+                    <div class="flex flex-col text-left text-[64px] font-bold text-black">
+                        <span>Your Resume</span>
+                        <div class="inline-flex"><div class="text-[#FA1239] relative lg:min-w-[436px]">Deserves a Yes<div class="absolute -bottom-2 left-0"><img src="assets/hero-text-underline-lg.png" alt="underline style"></div></div>&nbsp;Let&apos;s</div>
+                        <span class="mt-2">Make It Happen</span>
+                    </div>
+                    <!-- sub heading -->
+                    <h3 class="text-base leading-[34px] lg:pr-[135px]">If your resume isn&apos;t getting responses,
+                        it&apos;s time for an upgrade. Get an ATS-optimized resume crafted by HR experts to help you
+                        land more interviews. Our resumes are designed to get your foot in the door and place your name
+                        at the top of the shortlist.</h3>
+                    <!-- call to actions -->
+                    <div class="flex items-center justify-start space-x-6">
+                        <button
+                            class="uppercase px-[22px] py-3 bg-[#FA1239] rounded-[30px] text-white border-[1px] border-[#FA1239] shadow-[0px_0px_10px_2px_#FA1239] cursor-pointer hover:bg-white hover:border-[1px] hover:border-[#FA1239] hover:text-[#FA1239] hover:scale-x-110 active:scale-95 transition-all">Resume
+                            Packages</button>
+                        <button
+                            class="uppercase px-[22px] py-3 bg-[#FA1239] rounded-[30px] text-white border-[1px] border-[#FA1239] shadow-[0px_0px_10px_2px_#FA1239] cursor-pointer hover:bg-white hover:border-[1px] hover:border-[#FA1239] hover:text-[#FA1239] hover:scale-x-110 active:scale-95 transition-all">Contact
+                            Us</button>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center md:space-x-0 md:flex-col md:space-y-0 lg:flex-row lg:space-x-[50px] mt-[357px] lg:ml-[200px]">
+                    <!-- rating display -->
+                    <div
+                        class="flex justify-center items-center pl-[15px] pr-[30px] py-5 rounded-[10px] bg-white/95 space-x-5 md:w-[213px] lg:w-fit xl::scale-100 animate-bounce">
+                        <span class="text-[64px] font-semibold text-[#1CB098]">4.9</span>
+                        <div class="flex flex-col justify-start text-left space-y-[11px]">
+                            <img class="w-[100px] h-4" src="assets/5-stars.png" alt="5 start rating">
+                            <span class="font-semibold text-2xl">Instructor Rating</span>
+                        </div>
+                    </div>
+                    <!-- resume stats display -->
+                    <div
+                        class="flex items-center justify-center px-6 py-[26px] rounded-[10px] bg-white space-x-5 lg:mt-[400px] -mt-[400px]  md:min-w-[180px] lg:w-fit  xl::scale-100 animate-bounce">
+                        <img src="assets/hat.png" alt="hat icon">
+                        <div class="flex flex-col justify-start items-start text-left">
+                            <h5 class="font-black text-3xl">260+</h5>
+                            <span class="text-lg text-[#666666] w-[90%]">Online Resume Created</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- smaller screens -->
+        <div
+            class="lg:hidden w-full h-fit flex items-center justify-center relative bg-[url(/assets/hero-bg.png)] bg-cover bg-right min-h-screen">
+            <div class=" flex flex-col space-y-10 mx-5 pb-20">
+                <div class=" flex flex-col text-center justify-center items-center h-fit">
+                    <!-- heading -->
+                    <h1 class="font-bold text-4xl leading-[50px] capitalize bg-white/80 py-9 rounded-t-md px-5 mt-20 w-full">
+                        Your
+                        Resume<span class="text-[#FA1239]">&nbsp;Deserves a yes&nbsp;</span>let&apos;s make it happen
+                    </h1>
+                    <!-- dun heading -->
+                    <h3 class="text-base leading-[34px] bg-white/80 px-10 rounded-b-md pb-10 w-full">If your resume isn&apos;t
+                        getting responses,
+                        it&apos;s time for an upgrade. Get an ATS-optimized resume crafted by HR experts to help you
+                        land more interviews. Our resumes are designed to get your foot in the door and place your name
+                        at the top of the shortlist.</h3>
+                    <!-- call to actions -->
+                    <div class="flex items-center justify-start space-x-6 mt-5">
+                        <button
+                            class="uppercase px-[22px] py-3 bg-[#FA1239] rounded-[30px] text-white border-[1px] border-[#FA1239] shadow-[0px_0px_10px_2px_#FA1239] cursor-pointer hover:bg-white hover:border-[1px] hover:border-[#FA1239] hover:text-[#FA1239] active:scale-95">Resume
+                            Packages</button>
+                        <button
+                            class="uppercase px-[22px] py-3 bg-[#FA1239] rounded-[30px] text-white border-[1px] border-[#FA1239] shadow-[0px_0px_10px_2px_#FA1239] cursor-pointer hover:bg-white hover:border-[1px] hover:border-[#FA1239] hover:text-[#FA1239] active:scale-95">Contact
+                            Us</button>
+                    </div>
+                </div>
+                <div class="mt-10 flex flex-col space-y-4 items-center justify-center">
+                    <!-- rating display -->
+                    <div
+                        class="flex justify-center items-center pl-[15px] pr-[30px] py-5 rounded-[10px] bg-white/95 space-x-5 w-[70%]">
+                        <span class="text-[64px] font-semibold text-[#1CB098]">4.9</span>
+                        <div class="flex flex-col justify-start text-left space-y-[11px]">
+                            <img class="w-[100px] h-4" src="assets/5-stars.png" alt="5 start rating">
+                            <span class="font-semibold text-2xl">Instructor Rating</span>
+                        </div>
+                    </div>
+                    <!-- resume stats display -->
+                    <div
+                        class="flex items-center justify-center px-6 py-[26px] rounded-[10px] bg-white space-x-5 w-[70%]">
+                        <img src="assets/hat.png" alt="hat icon">
+                        <div class="flex flex-col justify-start items-start text-left">
+                            <h5 class="font-black text-3xl">260+</h5>
+                            <span class="text-lg text-[#666666] w-[80%]">Online Resume Created</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- cards section -->
+    <section id="cards-section" class="">
+        <!-- desktops -->
+        <div class="my-[50px] flex flex-col items-center justify-center mx-5 text-center lg:mx-[100px]">
+            <h4 class="bg-[#FD92A4]/30 px-5 py-[10px] rounded-[6px] text-center text-black text-lg font-semibold">What
+                You Get?</h4>
+            <!-- heading -->
+            <h3 class="mt-10 lg:mt-[26px] text-2xl lg:text-[26px] font-semibold capitalize">You&apos;re not just another applicant and your
+                resume shouldn&apos;t look like one</h3>
+            <!-- card display -->
+            <div id="card-container" class="mt-[50px] flex flex-col lg:flex-row items-center justify-center space-y-5 lg:space-y-0 lg:space-x-5 ">
+                
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+     <footer class="text-center py-3 ">
+        <div class="tracking-wide font-light inline-flex">made by&nbsp;<div class="font-semibold relative text-[#FA1239]">vaibhav <span class="font-light text-black">and</span> internet<div class="absolute -bottom-1 left-0"><img class="" src="assets/hero-text-underline-lg.png" alt="underline style"></div></div>.</div>
+     </footer>
+
+
+    <!-- adding script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
