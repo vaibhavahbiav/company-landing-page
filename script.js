@@ -6,22 +6,22 @@ const cardContainer = document.getElementById('card-container');
 
 const cardData = [
     {
-        img: './assets/card-image-1.png',
+        img: '/assets/card-image-1.png',
         title: 'A Resume That Passes ATS Filters',
         desc: 'Get a professionally written, keyword-optimized resume that lands in recruiter inboxes—not rejection piles.'
     },
     {
-        img: './assets/card-image-2.png',
+        img: '/assets/card-image-2.png',
         title: 'A Cover Letter That Gets Read',
         desc: 'Stand out with a cover letter that speaks directly to the role and reflects your strengths.'
     },
     {
-        img: './assets/card-image-3.png',
+        img: '/assets/card-image-3.png',
         title: 'A LinkedIn Profile That Works For You',
         desc: 'Attract the right eyes, start conversations, and show up in recruiter searches.'
     },
     {
-        img: './assets/card-image-4.png',
+        img: '/assets/card-image-4.png',
         title: 'Interview Confidence',
         desc: 'Interview preperation with real HR professionals so you speak clearly,confidently, and convincingly.'
     }

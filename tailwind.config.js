@@ -6,7 +6,7 @@ module.exports = {
                 "figtree": ["Figtree", "sans-serif"]
             },
             content: {
-                'custom-underline': 'url("assets/hero-text-underline.png")',
+                'custom-underline': 'url("../assets/hero-text-underline.png")',
             },
         },
     },
