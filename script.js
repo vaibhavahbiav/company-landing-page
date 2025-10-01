@@ -42,6 +42,5 @@ cardData.forEach((item, i) => {
                 <h5 class="text-xl text-left mt-[18px] font-semibold">${item.title}</h5>
                 <span class="text-lg leading-[30px] text-left mt-6">${item.desc}</span>
     `;
-    console.log(card.img);
     cardContainer.appendChild(card);
 })
