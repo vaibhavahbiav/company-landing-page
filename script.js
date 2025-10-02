@@ -35,7 +35,7 @@ menuBtn.addEventListener('click', () => {
 
 cardData.forEach((item, i) => {
     const card = document.createElement('div');
-    card.className = 'flex flex-col item-center justify-center p-5 rounded-[20px] shadow-md md:w-[230px] lg:w-[350px] lg:max-w-[298px] h-[450px]';
+    card.className = 'flex flex-col item-center justify-center p-5 rounded-[20px] shadow-md sm:max-w-[60%] md:w-[60%]  lg:w-[350px] h-[450px]';
     card.id = `card-${i}`;
     card.innerHTML = `
         <img class="w-[200px] h-[150px] self-center" src=${item.img} alt=card-${i}>
